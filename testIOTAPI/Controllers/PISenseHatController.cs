@@ -9,7 +9,7 @@ namespace testIOTAPI.Controllers
     [Route("[controller]")]
     public class PISenseHatController : ControllerBase
     {
-        [HttpGet]
+        [HttpGet("getweather")]
         public ActionResult<Weather> GetWeather()
         {
             var sh = new SenseHat();
@@ -32,7 +32,7 @@ namespace testIOTAPI.Controllers
             }
         }
 
-        [HttpGet]
+        [HttpGet("getacceleration")]
         public ActionResult<Acceleration> GetAcceleration()
         {
             var sh = new SenseHat();
@@ -55,7 +55,7 @@ namespace testIOTAPI.Controllers
             }
         }
 
-        [HttpGet]
+        [HttpGet("getangularrate")]
         public ActionResult<AngularRate> GetAngularRate()
         {
             var sh = new SenseHat();
@@ -78,7 +78,7 @@ namespace testIOTAPI.Controllers
             }
         }
 
-        [HttpGet]
+        [HttpGet("getmagneticinduction")]
         public ActionResult<MagneticInduction> GetMagneticInduction()
         {
             var sh = new SenseHat();
